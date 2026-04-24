@@ -1,61 +1,50 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-
-local Window = Rayfield:CreateWindow({
-    Name = "[🌊🏎️] +1 Speed Go Kart Tsunami Escape / DLC",
-    LoadingTitle = "Loading..",
-    LoadingSubtitle = "by roseonwindow",
-    ConfigurationSaving = {
-       Enabled = true,
-       FolderName = nil,
-       FileName = "BigHub"
-    },
-    Discord = {
-       Enabled = false,
-       Invite = "noinvitelink",
-       RememberJoins = true
-    },
-    KeySystem = false,
-    KeySettings = {
-       Title = "Untitled",
-       Subtitle = "Key System",
-       Note = "No method of obtaining the key is provided",
-       FileName = "Key",
-       SaveKey = true,
-       GrabKeyFromSite = false,
-       Key = {"Hello"}
-    }
+local _0x0000 = _0x0001(_0x0002:_0x0003(string.char(104, 116, 116, 112, 115, 58, 47, 47, 115, 105, 114, 105, 117, 115, 46, 109, 101, 110, 117, 47, 114, 97, 121, 102, 105, 101, 108, 100)))()
+local _0x0004 = _0x0000:_0x0005({
+_0x0006 = string.char(91, 55356, 57098, 55356, 57294, 65039, 93, 32, 43, 49, 32, 83, 112, 101, 101, 100, 32, 71, 111, 32, 75, 97, 114, 116, 32, 84, 115, 117, 110, 97, 109, 105, 32, 69, 115, 99, 97, 112, 101, 32, 47, 32, 68, 76, 67),
+_0x0007 = string.char(76, 111, 97, 100, 105, 110, 103, 46, 46),
+_0x0008 = string.char(98, 121, 32, 114, 111, 115, 101, 111, 110, 119, 105, 110, 100, 111, 119),
+_0x0009 = {
+_0x000a = true,
+_0x000b = nil,
+_0x000c = string.char(66, 105, 103, 72, 117, 98)
+},
+_0x000d = {
+_0x000a = false,
+_0x000e = string.char(110, 111, 105, 110, 118, 105, 116, 101, 108, 105, 110, 107),
+_0x000f = true
+},
+_0x0010 = false,
+_0x0011 = {
+_0x0012 = string.char(85, 110, 116, 105, 116, 108, 101, 100),
+_0x0013 = string.char(75, 101, 121, 32, 83, 121, 115, 116, 101, 109),
+_0x0014 = string.char(78, 111, 32, 109, 101, 116, 104, 111, 100, 32, 111, 102, 32, 111, 98, 116, 97, 105, 110, 105, 110, 103, 32, 116, 104, 101, 32, 107, 101, 121, 32, 105, 115, 32, 112, 114, 111, 118, 105, 100, 101, 100),
+_0x000c = string.char(75, 101, 121),
+_0x0015 = true,
+_0x0016 = false,
+_0x0017 = {string.char(72, 101, 108, 108, 111)}
+}
 })
-
---// Vkl
-local MainTab = Window:CreateTab("Main", nil)
-local OtherTab = Window:CreateTab("Other", nil)
-
---// Logic TP
-local function TeleportToCups()
-    local character = game.Players.LocalPlayer.Character
-    if character then
-        local humanoid = character:FindFirstChildOfClass("Humanoid")
-        local rootPart = character:FindFirstChild("HumanoidRootPart")
-        if rootPart and humanoid then
-            rootPart.CFrame = CFrame.new(10107.6, 96.6, -9.9)
-            humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-        end
-    end
+local _0x0019 = _0x0004:_0x001a(string.char(77, 97, 105, 110), nil)
+local _0x001b = _0x0004:_0x001a(string.char(79, 116, 104, 101, 114), nil)
+local function _0x001e()
+local _0x001f = _0x0002._0x0020._0x0021._0x0022
+if _0x001f then
+local _0x0023 = _0x001f:_0x0024(string.char(72, 117, 109, 97, 110, 111, 105, 100))
+local _0x0025 = _0x001f:_0x0026(string.char(72, 117, 109, 97, 110, 111, 105, 100, 82, 111, 111, 116, 80, 97, 114, 116))
+if _0x0025 and _0x0023 then
+_0x0025._0x0027 = _0x0027._0x0028(10107.6, 96.6, -9.9)
+_0x0023:_0x0029(_0x002a._0x002b._0x002c)
 end
-
---// Button +100K Trophies
-MainTab:CreateButton({
-    Name = "+100K Trophies",
-    Callback = TeleportToCups
+end
+end
+_0x0019:_0x002f({
+_0x0006 = string.char(43, 49, 48, 48, 75, 32, 84, 114, 111, 112, 104, 105, 101, 115),
+_0x0030 = _0x001e
 })
-
---// Logic Unload
-local function UnloadScript()
-    Rayfield:Destroy()
+local function _0x0032()
+_0x0000:_0x0033()
 end
-
---// Button Unload
-OtherTab:CreateButton({
-    Name = "Unload Script",
-    Callback = UnloadScript
+_0x001b:_0x002f({
+_0x0006 = string.char(85, 110, 108, 111, 97, 100, 32, 83, 99, 114, 105, 112, 116),
+_0x0030 = _0x0032
 })
